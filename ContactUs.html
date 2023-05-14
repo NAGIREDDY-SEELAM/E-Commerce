@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" src="style.css"> -->
+    <title>FARMERS HELP CENTER</title>
+    <style>
+        div{
+            font-family: cursive, sans-serif;
+      background-color: #52b91bba;
+      color: white;
+      padding: 10px;
+
+        }
+        .content {
+    width: 70%;
+    display: flex;
+    
+     }
+     .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     }
+     .list-items{
+         margin-right: 20px;
+     }
+.contact-child{
+    display:flex;
+    flex:1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+.child1{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+}
+.child1 p span{
+    font-size:16px;
+    color:#9df2fd;
+}
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      
+      a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+    <div class="content" style="text-align: center;">
+        <li class="list-items"><a href="index.html">Home</a></li>
+        <li class="list-items"><a href="ContactUs.html">Contact Us</a></li>
+        <li class="list-items"><a href="AboutUs.html">About Us</a></li>
+        <li class="list-items"><a href="buyerseller.html">BUYER AND SELLER</a></li>
+        <li class="list-items"><a href="product.html">Products</a></li>
+        <li class="list-items"><a href="diseases.html">Diseases</a></li>
+        
+    </div>
+
+
+
+    <div class="container">
+        <div class="contact-parent">
+           <div class="contact-child child1">
+              <p>
+                 <i class="fas fa-map-marker-alt"></i> Address <br />
+                 <span> hyderabad
+                 <br />
+                 telangana,India
+                 </span>
+              </p>
+              <p>
+                 <i class="fas fa-phone-alt"></i> Contact <br />
+                 <span>+9196******14 </span>
+              </p>
+              <p>
+                 <i class=" far fa-envelope"></i> General Support <br />
+                 <span>Ee-kissan@gmail.com</span>
+              </p>
+           </div>
+           <div style="text-align: center;background-color: orange;padding: 20px;box-shadow: 2px 2px 20px 23px #f0cb81;">
+            <h1>QUERY FORM</h1>
+      <form >
+        <label for="fname">Enter your name:</label><br>
+        <input type="text" id="name" name="name" value=""><br>
+        <label for="Contact">Enter contact no:</label><br>
+        <input type="int" id="Contact" name="Contact" value=""><br>
+        <label for="fname">Write your Query:</label><br>
+        <input type="text" id="Query" name="Query" value=""><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+          </div>
+    
+</body>
+</html>

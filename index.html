@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" src="style.css"> -->
+    <title>E-KISSAN</title>
+    <style>
+        .header img {
+  float:right;
+  width: 300px;
+  height: 100px;
+  background: white;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+        div{
+            font-family: cursive, sans-serif;
+      background-color: #52b91bba;
+      color: white;
+      padding: 10px;
+      /* border-radius: 10px; */
+      /* box-shadow: 2px 2px 10px 23px #7fecad; */
+        }
+        
+        /* .div1{
+            font-family: 'Courier New', Courier, monospace;
+        } */
+        .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    /* flex: right; */
+    
+    
+     }
+     .list-items{
+         margin-right: 20px;
+     }
+     a {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      
+      a:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+    <!-- <div class="header"><marquee ></marquee>
+        <img src="logo.gif" alt="logo";  /> -->
+        <!-- <h1 style="text-align: center;color: #f6f5f5;">E-KISAN</h1>
+      </div> 
+     -->
+
+    <div class="content" style="text-align: center;">
+        <li class="list-items"><a href="index.html">Home</a></li>
+        <li class="list-items"><a href="ContactUs.html">Contact Us</a></li>
+        <li class="list-items"><a href="AboutUs.html">About Us</a></li>
+        <li class="list-items"><a href="buyerseller.html">BUYER AND SELLER</a></li>
+        <li class="list-items"><a href="product.html">Products</a></li>
+        <li class="list-items"><a href="diseases.html">Diseases</a></li>
+    </div>
+    <img width="720px"height="400px";flex='left' src="background.jpg">
+    <img width="720px"height="400px";flex='right'  src="background 3.jpeg">
+    <!-- <h3 style="color: #e75931;" >CLICK  FOR FARMERS PORTAL  </h3>
+        <a href="https://farmer.gov.in/"> FARMERS PORTAL</a> -->
+
+<div style="text-align: right;" class="searchbox">
+            <input type="text" id="searchInput" placeholder="Search...">
+<button type="button" id="searchButton">Search</button>
+ <div id="searchResults"></div>
+<script>
+    function search() {
+  // Get the search query from the input field
+  var query = document.getElementById("searchInput").value;
+  
+  // Clear the previous search results
+  var resultsContainer = document.getElementById("searchResults");
+  resultsContainer.innerHTML = "";
+  
+  // Search for the query in the content of the page
+  var content = document.getElementsByTagName("body")[0].textContent;
+  var regex = new RegExp(query, "gi");
+  var matches = content.match(regex);
+  
+  // Display the search results
+  if (matches) {
+    for (var i = 0; i < matches.length; i++) {
+      var matchElement = document.createElement("div");
+      matchElement.innerHTML = matches[i];
+      resultsContainer.appendChild(matchElement);
+    }
+  } else {
+    resultsContainer.innerHTML = "No results found.";
+  }
+}
+var searchButton = document.getElementById("searchButton");
+searchButton.addEventListener("click", search);
+
+
+</script>
+
+
+            </div> 
+
+
+    <div class="div1">
+        <h1  style="text-align: center;">ABOUT  </h1>
+        <p>
+           
+        
+                <li>This Farmer Portal facilitates a single window solution to the farmers and stakeholders to disseminate the information about the Government schemes,market rates, Seed information, Farm Machinery, Fertilizers, soil info,weather information, advices ,problems and solutions in farming sector.</li> <br>
+                <li>It also provides easy portal access by providing various required links for government schems, weather information, market rates and other  relevant links.</li> <br>
+                <li>It helps farmers to get all the required information at one place without any delay and waste of time.</li><br>
+                <li>There is also entry form for writing  query. </li><br>
+                <li>There is a buyer and seller page where farmer can enter the crop and required details so that the buyer can see the informatiom and contact them and buy the crop that he want, so that both buyer and seller will be benificial without mediator. </li><br>
+              
+        </p>
+    </div>
+    <div>
+        <div  style="background-color: orange;padding: 20px;">
+      <marquee> <h1 style="text-align: center;"  >GOVERNMANT SCHEMS FOR FARMERS</h1></marquee> 
+        <h2 style="text-align: center;color: #2e48cc;" > RYTHU BANDU SCHEME</h2>
+        <!-- <p class="aligncenter"> -->
+         <center>  <img width="500px";height='500px' src="rythu.jpg" alt="Rythu bandu image" ></center> 
+        <!-- </p> <br> -->
+        <p>Rythu Bandhu scheme also Farmers’ Investment Support Scheme (FISS) is a welfare program to support farmer’s investment for two crops a year by the Government of Telangana. The government is providing 58.33 lakh farmers, ₹5000 per acre per season to support the farm investment, twice a year, for rabi (Yasangi) and kharif (Rainy) seasons.<br><br>
+            Established: 10 May 2018<br>
+            Founder: Government of Telangana<br>
+            Location: Telangana, India<br>
+            Type of project: Farmer Investment support</p>
+            <h3 style="color: #e75931;" >CLICK BELOW FOR RYTHU BANDU PAGE </h3>
+        <a href="http://rythubandhu.telangana.gov.in/default_rb1.aspx"> RYTHU BANDU LINK</a>
+           
+        <h2 style="text-align: center;color: #2e48cc;" > AAROGYA SATU  SCHEME </h2>
+        <center>  <img width="500px"src="Aarogya Setu.jpg" alt="Aarogya Setu image" ></center>
+        <p>
+            Aarogya Setu (translation from Sanskrit: the bridge to health) is an Indian COVID–19 "contact tracing, syndromic mapping and self-assessment" digital service, primarily a mobile app. The stated purpose of this app is to spread awareness of COVID–19 and to connect essential COVID–19-related health services to the people of India. 
+
+This app is an updated version of an earlier app called Corona Kavach (now discontinued) which was released earlier by the Government of India.<br><br>
+Developer(s)  : National Informatics Centre, Government of India<br>
+Initial release : April 2020<br>
+Operating system : Android 5 or above · iOS 10.3 or above · IVRS · KaiOS<br>
+Available in : 12 languages<br>
+Type       ::Health care
+        </p>
+        <h3 style="color: #e75931;" >CLICK  BELOW FOR AAROGYA SATU PAGE </h3>
+        <a href="https://www.aarogyasetu.gov.in/">AAROGYA SATU LINK </a><br><br>
+             
+        </div> 
+
+    </div>
+
+    <div class="div2" style="background-color: rgb(13, 204, 238); padding: 30px;">
+        <marquee><h1 style="text-align: center;" >MARKET RATE OF CROPS </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="crops rates.jpg" alt="crops rate image" ></center>
+
+        <p>
+            The market price is the current price at which a good or service can be purchased or sold.<br>
+The market price of an asset or service is determined by the forces of supply and demand; the price at which quantity supplied equals quantity demanded is the market price.<br>
+In financial markets, the market price can change quickly as people change their bid or offer prices, or as sellers hit the bid or buyers hit the offer.<br>
+        </p>
+
+        <h3 style="color: #e75931;" >CLICK BELOW TO FIND CROPS RATE  </h3>
+        <a href="http://agmarknet.gov.in/">CROPS RATE LINK </a><br><br>
+
+<!-- 
+        <div style="background-color: rgba(239, 247, 7, 0.927); padding: 30px;">
+            <h1 style="text-align: center;" >estimate market rates in future  </h1>
+            <p>
+                This page provides estimate market rates of crops in future
+            </p>
+        </div>
+        <br><br><br><br> -->
+    </div>
+
+    <div class="div3" style="background-color: rgb(247, 151, 7); padding: 30px;">
+        <marquee> <h1 style="text-align: center;" >LATEST TECHNOLOGY IN FARMING  </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="Technology.jpg" alt="Technology image" ></center>
+        <p>
+            Agriculture or farming is the practice of cultivating plants and livestock.[2] Agriculture was the key development in the rise of sedentary human civilization, whereby farming of domesticated species created food surpluses that enabled people to live in cities.<br>
+           <h3> New Agriculture Technology in Modern Farming</h3>
+
+Indoor Vertical Farming... <br>
+Farm Automation. ...<br>
+Livestock Farming Technology. ...<br>
+Modern Greenhouses. ...<br>
+Precision Agriculture. ..<br> 
+        </p >
+        <h3 style="color: #e75931;" >CLICK BELOW TO KNOW  MORE TECHNOLOGY INFORMATION </h3>
+        <a href="https://www.plugandplaytechcenter.com/resources/new-agriculture-technology-modern-farming/#:~:text=New%20Agriculture%20Technology%20in%20Modern%20Farming%201%20Indoor,...%206%20Blockchain.%20...%207%20Artificial%20Intelligence.%20">TECHNOLOGY INFORMATION LINK </a><br><br>
+
+    </div>
+
+    
+    <div style="background-color: rgb(13, 204, 238); padding: 30px;">
+        <marquee>  <h1 style="text-align: center;" >weather information </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="weather.jpg" alt="weather image" ></center>
+        <p>
+            Agricultural weather stations are instruments that measure and display different local measurements to help with ideal farming conditions. This data can be observed at the site or over the internet. Most weather stations measure wind speed and direction, pressure, temperature, rain level, and solar radiation.
+        </p>
+        <h3 style="color: #e75931;" >CLICK BELOW TO KNOW WEATHER INFORMATION IN A PLACE </h3>
+        <a href="https://www.accuweather.com/en/in/india-weather">WEATHER INFORMATION LINK </a><br><br>
+    </div>
+
+    <div class="div4" style="background-color: rgb(247, 151, 7); padding: 30px;">
+        <marquee> <h1 style="text-align: center;" >ORGANIC FARMING  </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="organic.jpg" alt="weather image" ></center>
+        <p>
+            Organic farming, in the European Union more commonly known as ecological farming or biological farming,[1] is an agricultural system that uses fertilizers of organic origin such as compost manure, green manure, and bone meal and places emphasis on techniques such as crop rotation and companion planting. It originated early in the 20th century in reaction to rapidly changing farming practices. Certified organic agriculture accounts for 70 million hectares globally, with over half of that total in Australia.
+        </p>
+        <h3 style="color: #e75931;" >CLICK BELOW TO KNOW  MORE ABOUT MODERN  ORGANIC FARMING METHODS </h3>
+        <a href="https://en.wikipedia.org/wiki/Organic_farming">ORGANIC FARMING  </a><br><br>
+
+    </div>
+
+    <div class="div5" style="background-color: rgb(13, 204, 238); padding: 30px;">
+        <marquee> <h1 style="text-align: center;" >ADVICES FOR FARMERS </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="advice.jpg" alt="advice image" ></center>
+        <p>
+            What kind of environment is suitable?<br>
+
+            Which Types of crops  are suitable?<br>
+            
+            What inputs are needed?<br>
+            
+            Seed collection, viability and planting the seeds<br>
+            
+            Planting out<br>
+            
+            Pruning<br>
+            
+            Planting the crops<br>
+            
+            After the Harvest<br>
+            
+            
+        </p>
+        <h3 style="color: #e75931;" >CLICK  BELOW FOR MORE ADVICES FOR BETTER FARMING </h3>
+        <a href="https://www.rainforestsaver.org/advice-for-farmers">ADVICES FOR BETTER FARMING  </a><br><br>
+
+
+    </div>
+
+    <div style="background-color: rgb(247, 151, 7); padding: 30px;">
+        
+        <marquee> <h1 style="text-align: center;" >SOIL INFORMATION </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="soil.jpg" alt="soil image" ></center>
+
+        <p>
+            Soil formation is the combined result of physical, chemical and biological processes under certain environmental conditions. The soil is a combination of biotic and abiotic components. It contains microorganisms, worms, minerals, decaying organic matters, hummus, elements like water and air which altogether makes the soil fertile and source of nutrients. The soil is mainly of three types: sandy soil, clayey soil, and loamy soil. Among this loamy soil is more suitable for farming. An ideal soil for agriculture has the following characteristics:<br><br>
+
+Good water holding capacity<br>
+Proper aeration<br>
+Good consistency (texture)<br>
+Balanced acid and alkaline content<br>
+Rich in nutrients (micro and macronutrients)<br>
+        </p>
+        <h3 style="color: #e75931;" >CLICK  BELOW FOR MORE SOIL INFORMATION </h3>
+        <a href="https://www.agrifarming.in/soil-types-suitable-crops-india#:~:text=Soil%20Types%20in%20India%3A-%20There%20are%20many%20soil,than%2035%25%20of%20the%20total%20land%20in%20India.">SOIL INFORMATION </a><br><br>
+
+    </div>
+    
+
+    
+    <div class="div6" style="background-color: rgb(13, 204, 238); padding: 30px;">
+        <marquee> <h1 style="text-align: center;" >PROBLEMS AND SOLUTIONS </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="problems.jpg" alt="PROBLEMS AND SOLUTIONS" ></center>
+
+        <p>
+            Major problems and solutions for livestock farming <br>
+
+            Inadequate availability of credit.<br>
+            Limited availability of quality breeding bulls.<br>
+            Deficiency of vaccines and vaccination setup.<br>
+            Due to urbanization majority of grazing lands are degraded or encroached.<br>
+            Feed and fodder diversion ingredients for industrial use.<br>
+        </p>
+        <h3 style="color: #e75931;" >CLICK  BELOW FOR PROBLEMS, SOLUTIONS   </h3>
+        <a href="https://www.agrifarming.in/farming-problems-and-solutions-tips-and-ideas#:~:text=%20Major%20problems%20and%20solutions%20for%20livestock%20farming,fodder%20diversion%20ingredients%20for%20industrial%20use.%20More%20">PROBLEMS AND SOLUTIONS</a><br><br>
+
+    </div>
+
+    <div class="div7" style="background-color: rgb(247, 151, 7); padding: 30px;">
+        <marquee><h1 style="text-align: center;" >HELP-LINE FOR FARMERS </h1></marquee>
+        <center>  <img width="500px" ;height='500px'src="help.jpg" alt="HELP-LINE" ></center>
+        
+        <p>
+          For any queries,  Farmers can place a toll free call on Bayer’s national helpline number 1800-120-4049 from both landline and mobile phones. The helpline will be operational between 09:00 am – 06:00 pm every Monday to Saturday.
+        </p>
+        <h3 style="color: #e75931;" >CLICK  BELOW FOR HELP-LINE  </h3>
+        <a href="https://www.cropscience.bayer.in/en/Sustainable-Crop-Solutions/National-Helpline-for-Farmers.aspx#:~:text=Farmers%20can%20place%20a%20toll%20free%20call%20on,am%20%E2%80%93%2006%3A00%20pm%20every%20Monday%20to%20Saturday.">HELP-LINE</a><br><br>
+
+    </div>
+
+
+        
+</body>
+</html>
